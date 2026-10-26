@@ -660,7 +660,7 @@
                         incrementDailyCount();
                         setSearchResult(JSON.parse(cached));
                         setCurrentPage('result');
-                        showMsg("DATA DITEMUKAN");
+                        showMsg("");
                         return;
                     }
                 } catch (e) {}
@@ -676,7 +676,7 @@
                             setSearchResult(firebaseResult);
                             setCurrentPage('result');
                             setLoading(false);
-                            showMsg("INFORMASI KENDARAAN DITEMUKAN");
+                            showMsg("");
                             return;
                         }
                     } catch (err) {
@@ -881,8 +881,8 @@
                                     <p className="text-[60px] font-black text-white font-mono-custom tracking-tighter">{registrationId}</p>
                                 </div>
                                 <div className="w-full space-y-4 max-w-[340px]">
-                                    <button type="button" onClick={handleLoginOnline} className="w-full bg-white text-black py-5 rounded-2xl font-black text-lg uppercase shadow-xl active:scale-95 flex items-center justify-center gap-3 hover:bg-slate-100 transition-all"><Icons.Shield cls="w-5 h-5 text-black" /> LOGIN APLIKASI </button>
-                                    <button type="button" onClick={() => window.open(`https://wa.me/${ADMIN_WA}?text=${encodeURIComponent('Saya Mau Aktivasi Aplikasi 𝐉𝐀𝐖𝐀𝐑𝐀 𝐏𝐋𝐀𝐓𝐈𝐍𝐔𝐌, Bantu Aktifkan ID berikut ini : '+registrationId)}`)} className="w-full bg-zinc-900 border border-white/30 text-white py-5 rounded-2xl font-black text-lg uppercase shadow-lg active:scale-95 flex items-center justify-center gap-3 hover:bg-zinc-800 transition-all">KLIK DAFTAR</button>
+                                    <button type="button" onClick={handleLoginOnline} className="w-full bg-white text-black py-5 rounded-2xl font-black text-lg uppercase shadow-xl active:scale-95 flex items-center justify-center gap-3 hover:bg-slate-100 transition-all"><Icons.Shield cls="w-5 h-5 text-black" /> MASUK </button>
+                                    <button type="button" onClick={() => window.open(`https://wa.me/${ADMIN_WA}?text=${encodeURIComponent('Saya Mau Aktivasi Aplikasi 𝐉𝐀𝐖𝐀𝐑𝐀 𝐀𝐏𝐏𝐒, Bantu Aktifkan ID berikut ini : '+registrationId)}`)} className="w-full bg-zinc-900 border border-white/30 text-white py-5 rounded-2xl font-black text-lg uppercase shadow-lg active:scale-95 flex items-center justify-center gap-3 hover:bg-zinc-800 transition-all">PENDAFTARAN</button>
                                 </div>
                             </div>
                         </div>
@@ -894,7 +894,7 @@
                             <header className="px-6 py-5 flex items-center justify-between border-b border-white/10 bg-black/90 backdrop-blur-md z-50">
                                 <div className="flex items-center gap-3 text-white">
                                     <div className="bg-white p-1.5 rounded-lg shadow-[0_0_15px_rgba(255,255,255,0.4)] text-black"><Icons.Database cls="w-5 h-5 text-black" /></div>
-                                    <span className="font-black text-2xl tracking-tighter text-white">PLATINUM</span>
+                                    <span className="font-black text-2xl tracking-tighter text-white">JAWARA</span>
                                 </div>
                                 {renderStatusOverlay()}
                             </header>
@@ -1570,7 +1570,7 @@
                                         </button>
                                     ))}
                                 </div>
-                                <button type="button" onClick={() => setDurationModal(null)} className="w-full mt-8 py-4 text-slate-400 font-black text-[11px] uppercase tracking-widest outline-none">DISMISS</button>
+                                <button type="button" onClick={() => setDurationModal(null)} className="w-full mt-8 py-4 text-slate-400 font-black text-[11px] uppercase tracking-widest outline-none">𝐁𝐀𝐓𝐀𝐋𝐊𝐀𝐍</button>
                             </div>
                         </div>
                     )}
@@ -1596,7 +1596,7 @@
                                     <rect x="11" y="1.5" width="2" height="5" rx="1" fill="currentColor" opacity="0.25" transform="rotate(270 12 12)" />
                                     <rect x="11" y="1.5" width="2" height="5" rx="1" fill="currentColor" opacity="0.125" transform="rotate(315 12 12)" />
                                 </svg>
-                                <p className="text-white font-black uppercase text-[10px] tracking-[0.5em] animate-pulse">MEMPROSES DATA</p>
+                                <p className="text-white font-black uppercase text-[10px] tracking-[0.5em] animate-pulse">LOADING DATA</p>
                             </div>
                         </div>
                     )}
